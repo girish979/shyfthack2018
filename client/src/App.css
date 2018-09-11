@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+body {
+  color: #333;
+  font-family:  'Josefin Sans', sans-serif;
+  background: #28AFB0;
+}
+
+.app-container {
+  /* background: #DEE2D6; */
+  background: #eaede5;
+  max-width: 1200px;
+  min-height: calc(100vh - 40px);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.container {
+  padding: 20px;
+}
+
+.subheader h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header {
+  border-bottom: 1px solid #000;
+}
+
+.inventory-line-item {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.inventory-image {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.inventory-image img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.inventory-description,
+.inventory-achievement,
+.inventory-add-remove-item {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  background: #FCB07E;
+  border: none;
+  padding: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.profile-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+dt {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.profile-friends {
+  margin-top: 60px;
+}
+
+.profile-friends-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-right: 60px;
+}
+
+.profile-friends-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-friends img {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #1f8686;
+}
+
+.error {
+  border: 6px solid red;
+  background: white;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
